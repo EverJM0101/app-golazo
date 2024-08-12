@@ -1,0 +1,36 @@
+.CartWidget {
+    width: auto;
+    padding: 12px;
+    font-size: 8px;
+    background: #cee2fc;
+    border-radius: 15px;
+    flex: none;
+    display: flex;
+    order: 1;
+    align-self: center;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    border-style: none;
+    cursor: pointer;
+    outline: inherit;
+    font-size: medium;
+    margin-right: 2.1em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: box-shadow .2s ease-in-out;
+}
+
+.CartWidget:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.CartWidget span{
+    font-size: 1.16em;
+    padding: 0 0.34em;
+}
+
+.CartImg {
+    margin-right: 10px;
+}
