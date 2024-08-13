@@ -8,76 +8,72 @@ export default function Navbar() {
    
     const items = [
         {
-            label: (
-              <NavLink
+            label: 'Telefonos',
+            template: (item, options) => {
+                return (
+                <NavLink
                 className={({ isActive }) =>
-                  isActive ? "ActiveOption" : "Option"
+                isActive ? "ActiveOption" : "Option"
                 }
                 aria-current="page"
-                to="/category/phone"
-              >
-                Telefonos
-              </NavLink>
-            ),
-            icon: 'pi pi-mobile'
+                to="/category/phone">
+                    <i className='pi pi-mobile'></i> {item.label}
+                </NavLink>);
+            },
         },
         {
-            label: (
-              <NavLink
+            label:'Laptops',
+            template: (item, options) => {
+                return (
+                <NavLink
                 className={({ isActive }) =>
-                  isActive ? "ActiveOption" : "Option"
+                    isActive ? "ActiveOption" : "Option"
                 }
                 aria-current="page"
-                to="/category/laptop"
-              >
-                Laptops
-              </NavLink>
-            ),
-            icon: 'pi pi-star'
+                to="/category/laptop">
+                    <i className='pi pi-star'></i> {item.label}
+                  </NavLink>
+                );
+            }
         },
         {
-          label: (
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "ActiveOption" : "Option"
-              }
-              aria-current="page"
-              to="/category/pc"
-            >
-              Computadoras
-            </NavLink>
-          ),
-          icon: 'pi pi-desktop',
+          label: 'Computadoras',
+          template: (item, options) => {
+            return (
+                <NavLink
+                className={({ isActive }) =>
+                    isActive ? "ActiveOption" : "Option"
+                } aria-current="page"
+                to="/category/pc">
+                    <i className='pi pi-desktop'></i> {item.label} 
+                </NavLink>
+                );
+            },
         },
         {
-          label: (
-            <NavLink
-              className={({ isActive }) =>
-                isActive ? "ActiveOption" : "Option"
-              }
-              aria-current="page"
-              to="/category/watch"
-            >
-              Relojes
-            </NavLink>
-          ),
-          icon: 'pi pi-clock',
+          label: 'Relojes',
+          template: (item, options) => {
+            return (
+                <NavLink
+                className={({ isActive }) =>
+                isActive ? "ActiveOption":"Option"}
+                aria-current="page"
+                to="/category/watch">
+                     <i className='pi pi-clock'></i> {item.label}
+                </NavLink>
+                );
+            },
         }
     ];
 
     const start = (
-
-      <Link className='navbar-titulo' to="/">
-        <img alt="logo-golazo" src="https://i.ibb.co/pWFsPHT/goal.png" height="40"></img>
-        <h1>Gol Store</h1>
-      </Link>
+        <Link className='navbar-titulo' to="/">
+            <img alt="logo-golazo" src="https://i.ibb.co/CQFyKVt/letter-c.png" height="40"></img>
+            <h1>Control Store</h1>
+        </Link>
     );
     
     const end = (
-        // <div className="flex align-items-center gap-2">
-        //     <InputText placeholder="Search" type="text" className="w-8rem sm:w-auto" />
-        //     <Avatar image="https://primefaces.org/cdn/primereact/images/avatar/amyelsner.png" shape="circle" />
-        // </div>
         <CardWidget></CardWidget>
     );
 

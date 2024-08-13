@@ -2,7 +2,7 @@
     width: auto;
     padding: 12px;
     font-size: 8px;
-    background: #cee2fc;
+    background: #d6d6d6;
     border-radius: 15px;
     flex: none;
     display: flex;
@@ -29,6 +29,7 @@
 .CartWidget span{
     font-size: 1.16em;
     padding: 0 0.34em;
+    color: #000;
 }
 
 .CartImg {

@@ -6,8 +6,8 @@ import { createProductAdaptedFromFirebase } from '../../../adapters/ProductAdapt
 
 export const getProducts = (categoryId) => {
     const productsCollection = categoryId 
-    ? query(collection(db, "products"), where("category", "==", categoryId))
-    : collection(db, "products")
+    ? query(collection(db, "productos"), where("category", "==", categoryId))
+    : collection(db, "productos")
 
     return getDocs(productsCollection)
         .then((querySnapshot)=>{
@@ -20,6 +20,8 @@ export const getProducts = (categoryId) => {
             return error
         })
 };
+
+
 export const getProductById = (itemId)=>{
     const productDoc = doc(db, "products", itemId)
 

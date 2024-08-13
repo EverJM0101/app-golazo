@@ -3,6 +3,7 @@
   position: sticky;
   width: 100%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+z-index: 9999999;
 }
 .navbar-titulo{
   display: flex;
@@ -24,6 +25,8 @@
 .ActiveOption, .Option{
   text-decoration: none;
   color: inherit;
+  margin: 0 1em;
+  padding: 0.5em 0;
 }
 
 .ActiveOption{

@@ -10,8 +10,7 @@ function CardWidget() {
       <img src="https://i.ibb.co/wBFtcdJ/grocery-store.png"
         className="CartImg"
         style={{width: 25}}
-        alt='cart-widget'
-      />
+        alt='cart-widget' />
       <span>{totalQuantity}</span>
       
     </Link>
