@@ -19,3 +19,18 @@
     opacity: 0;
     transition: opacity 300ms;
   }
+
+  button{
+    background-color: #2e86c1;
+    color: #fff;
+    border-radius: 0.5em;
+    padding: 0.5em 1.2em;
+    text-decoration: none;
+    padding: 0.5em 3em;
+    transition: all .2s ease-in-out;
+}
+
+button:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #154ead;
+}

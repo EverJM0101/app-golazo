@@ -11,7 +11,7 @@ const CartItem = ({id, name, quantity, price}) => {
         <h2 className="ItemHeaderCartItem">{name}</h2>
       </header>
       <section className="ContainerItemCartItem">
-        <p className="ItemCartItem">Cantidad: {quantity}</p>
+        <p className="ItemCartItem">Cantidad: {quantity}</p><br />
         <p className="ItemCartItem">Precio x unidad: $ {price}</p>
       </section>
       <footer className="ItemFooterCartItem">

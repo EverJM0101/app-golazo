@@ -8,7 +8,9 @@ const Cart = () => {
     console.log(total)
 
     if(totalQuantity === 0){
-        return <h1>No hay items en el carrito</h1>
+        return <h1 style={{
+          textAlign: 'Center',
+        }}>No hay ningun producto :C</h1>
     }
   return (
     <div>

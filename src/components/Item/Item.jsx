@@ -15,13 +15,13 @@ const Item = ({product}) => {
                 <span >{product.category}</span>
             </div>
             
-            <h5 className="card-title">{product.name}</h5>
-            <h4><span>$</span><span className="item-price">{product.price}</span></h4>
+            <h4 className="card-title">{product.name}</h4>
+            <h5><span>$</span><span className="item-price">{product.price}</span></h5>
             <p>
                 {product.description}
             </p>
             <Link to={`/detail/${product.id}`} className="item-button">
-            Ver Detalle
+                Ver más <i className="pi pi-plus"></i>
             </Link>
         </div>
     </div>

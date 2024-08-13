@@ -3,7 +3,6 @@ import Item from "../Item/Item"
 import "./ItemList.css";
 
 const ItemList = ({products}) => {
-  console.log("me redibuje")
   return (
     <div className="item-list">
        {
